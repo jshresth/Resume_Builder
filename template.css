@@ -36,6 +36,14 @@ header ul {
   padding-left: 0px;
 }
 /*
+form */
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+/*
 footer
 */
 section {
