@@ -11,7 +11,7 @@ body{
 	font-size: 18px;
 	font-family: 'Roboto', sans-serif;
 	color: black;
-	padding: 80px;
+	padding: 80px 80px 10px 200px;
 }
 
 ul{
@@ -101,4 +101,33 @@ i{
 	height: 6px;
 	background-color: #F48C06;
 	border-radius: 2px;
+}
+
+
+
+/********************************************/
+/***********Personal Info********************/
+/********************************************/
+form{
+	width: 80%;
+}
+
+.row{
+	padding: 10px;
+}
+.personal_head{
+	text-transform: uppercase; 
+}
+input{
+	height: 50px;
+	width: 40px;
+}
+.next_btn{
+	float: right;
+}
+.nx_btn{
+	height: 40px;
+	width: 80px;
+	background-color: green;
+	border: 0px;
 }
