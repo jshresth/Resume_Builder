@@ -6,9 +6,47 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <link rel="stylesheet" type="text/css" href="./assets/template.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/navbar.css" />
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   </head>
   <body>
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fa fa-bars" style="padding-top: 7px;"></i>
+      </span>
+      <a href="#home" class="logo">
+        <img
+          src="./assets/logo.png"
+          style="width: 280px; height: 50px; margin-left: 0; float: left;"
+          ;
+      /></a>
+
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="#aboutus" class="nav-links" style="padding: 5px;">
+            About Us</a
+          >
+        </li>
+
+        <li>
+          <a href="#contactUs" class="nav-links" style="padding: 5px;"
+            >Contact Us</a
+          >
+        </li>
+        <li>
+          <a href="#singup" class="nav-links buttons">Sign Up</a>
+        </li>
+      </ul>
+    </nav>
+    <script>
+      let mainNav = document.getElementById("js-menu");
+      let navBarToggle = document.getElementById("js-navbar-toggle");
+      navBarToggle.addEventListener("click", function () {
+        mainNav.classList.toggle("active");
+      });
+    </script>
+
     <!-- Compiled and minified JavaScript -->
     <div class="carousel">
       <div class="carousel-item">

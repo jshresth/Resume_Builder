@@ -24,7 +24,7 @@ $email= $_POST['email'];
         <div class="intro">
 
         	<?php
-            '<h2 class="name">'.$fname.'</h2>
+            '<h2 class="name">'. echo $fname.'</h2>
             <p class="address">
                 <i class="fas fa-location-arrow"></i>'.$add.','.$city.','.$state.
                 '<p>
