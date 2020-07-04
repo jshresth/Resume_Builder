@@ -25,7 +25,7 @@ body {
     text-decoration: none;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    /*padding: 14px 16px;*/
     text-decoration: none;
 }
 
@@ -84,7 +84,7 @@ a.buttons:hover {
         background-color: black;
     }
     .main-nav {
-        width: 70%;
+        /*width: 70%;*/
         display: inline-flex;
         margin-right: 30px;
         flex-direction: row;

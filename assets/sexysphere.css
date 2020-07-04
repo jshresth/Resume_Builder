@@ -11,6 +11,8 @@ body{
 	font-size: 18px;
 	font-family: 'Roboto', sans-serif;
 	color: black;
+}
+.content_body{
 	padding: 80px 80px 10px 200px;
 }
 
@@ -128,6 +130,44 @@ input{
 .nx_btn{
 	height: 40px;
 	width: 80px;
-	background-color: green;
+	background-color: #C6AC8F;
 	border: 0px;
+}
+
+/********************************************/
+/***********Experience***********************/
+/********************************************/
+#job_desc{
+	width: 100%;
+	height: 200px;
+}
+
+textarea[placeholder]{
+	padding: 10px;
+}
+
+/********************************************/
+/***********Education***********************/
+/********************************************/
+#select_form{
+	height: 50px;
+}
+
+#present_ed{
+	height: 15px;
+	width: 15px;
+}
+.attending{
+	float: right;
+	padding-right: 28%;
+}
+
+/********************************************/
+/***********Skills***************************/
+/********************************************/
+
+.add_btn{
+	display: block;
+	float:right;
+	padding-right: 28%;
 }
