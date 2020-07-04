@@ -171,3 +171,27 @@ textarea[placeholder]{
 	float:right;
 	padding-right: 28%;
 }
+
+
+.head_template{
+	padding-top: 10px;
+	text-align: center;
+}
+.template_design{
+	width: 100%;
+	padding-top: 3%;
+	padding-left: 20%;
+}
+.template1, .template2{
+	width: 100%;
+}
+.tem_thumbnail{
+	width: 40%;
+	border: transparent;
+	transition: width, 0.2s, border, 0.2s;
+	
+}
+.tem_thumbnail:hover{
+	width: 42%;
+	border: 1pt solid green;
+}
