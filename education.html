@@ -68,23 +68,34 @@
         </p>
       </div>
 
-    <div class="form">
-        <form>
-            <div class="row">
-                <div class="col">
-                    <input type="text"  class="form-control" placeholder="School Name">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="City">
-                </div>
+      <div class="form">
+        <form method="post" action="education_action.php">
+          <div class="row">
+            <div class="col">
+              <input
+                type="text"
+                name="school"
+                class="form-control"
+                placeholder="School Name"
+              />
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="City" />
+              <input
+                type="text"
+                name="city"
+                class="form-control"
+                placeholder="City"
+              />
             </div>
           </div>
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="State" />
+              <input
+                type="text"
+                name="state"
+                class="form-control"
+                placeholder="State"
+              />
             </div>
             <div class="col">
               <select class="form-control" id="select_form">
@@ -101,6 +112,7 @@
               <div class="label">Field of Study</div>
               <input
                 type="text"
+                name="study"
                 class="form-control"
                 placeholder="e.g. Engineering"
               />
