@@ -69,34 +69,56 @@
       </div>
 
       <div class="form">
-        <form action="WilliamSexysphere.php" method="post">
+        <form action="connectsql.php" method="post">
           <div class="row">
             <div class="col">
               <input
                 type="text"
+                name="fname"
                 class="form-control"
                 placeholder="First name"
               />
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Last name" />
+              <input
+                type="text"
+                name="lname"
+                class="form-control"
+                placeholder="Last name"
+              />
             </div>
           </div>
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Address" />
+              <input
+                type="text"
+                name="add"
+                class="form-control"
+                placeholder="Address"
+              />
             </div>
           </div>
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="City" />
+              <input
+                type="text"
+                name="city"
+                class="form-control"
+                placeholder="City"
+              />
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="State" />
+              <input
+                type="text"
+                name="state"
+                class="form-control"
+                placeholder="State"
+              />
             </div>
             <div class="col">
               <input
                 type="number"
+                name="zcode"
                 class="form-control"
                 placeholder="Zip code"
               />
@@ -106,26 +128,31 @@
             <div class="col">
               <input
                 type="email"
+                name="email"
                 class="form-control"
                 placeholder="Email address"
               />
             </div>
             <div class="col">
-              <input type="number" class="form-control" placeholder="Phone" />
+              <input
+                type="number"
+                name="phone"
+                class="form-control"
+                placeholder="Phone"
+              />
             </div>
           </div>
           <div class="row">
             <div class="col">
               <textarea
                 id="job_desc"
+                name="profile"
                 placeholder="Professional Summary"
               ></textarea>
             </div>
           </div>
           <div class="row next_btn">
-            <button class="nx_btn" type="submit" href="education.html">
-              Next
-            </button>
+            <button class="nx_btn" name="submit" type="submit">Next</button>
           </div>
         </form>
       </div>
