@@ -1,7 +1,7 @@
 <?php
 include 'connection.php';
 session_start();
-$cid= $_SESSION['cid'];
+$cid= $_SESSION['cId'];
 
 ?>
 <!DOCTYPE html>
@@ -89,7 +89,7 @@ if($edu_rows>0){
         <div class="honors_history">
             <h3 class="topic"><i class="fas fa-award"></i>Honors</h3>
             <div class="his1">
-                <h4 class="job_head">President of Eco Club</h4>
+                <h4 class="job_head">Scholarship recipient</h4>
                 <h5 class="job_date">June 2015 - Current</h5>
             </div>
         </div>
@@ -105,16 +105,14 @@ $skill_rows = mysqli_num_rows($skill_result);
 if($skill_rows>0){
     while($row=mysqli_fetch_assoc($skill_result)){
                 echo '<ul class="skills">
-   +                 <li>'.$row['skill'].' -> '.$row['level'].'</li>';
-                    echo '<li>JavaScript</li>
-                    <li>Java</li>
-                    <li>CSS</li>
-                </ul>
-            </div>
-        </div>';
+                  <li>'.$row['skill'].' -> '.$row['level'].'</li>';
+                    echo '
+                </ul>';
     }
 }
 ?> 
+</div>
+</div>
 
         <div class="hobbies_history">
             <h3 class="topic"><i class="fas fa-heart"></i>Hobbies</h3>
@@ -144,6 +142,5 @@ if($skill_rows>0){
         </div>
     </div>
 </div>
-?>
 </body>
 </html
