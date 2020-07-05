@@ -23,8 +23,14 @@
             <li>
                 <a href="#singup" class="nav-links buttons ">Sign Up</a>
             </li>
+            <li>
+                <a href="formone.php" class="nav-links buttons ">Sign Up</a>
+            </li>
         </ul>
     </nav>
+
+
+
     <script>
         let mainNav = document.getElementById('js-menu');
         let navBarToggle = document.getElementById('js-navbar-toggle');
@@ -32,6 +38,7 @@
             mainNav.classList.toggle('active');
         });
     </script>
+
 
     <!--Footer here-->
     <section>

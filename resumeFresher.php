@@ -7,6 +7,10 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/resumeFresher.css">
+
+    <script src="./assets/resumeFresher.js"></script>
+    <script src="./assets/resumeJS_load.js"></script>
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
@@ -19,24 +23,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-
 <body>
 
     <!-- Header -->
     <div class="container">
         <div class="row">
             <div class="col-md-9">
-                <h1 id="name"> Your Name</h1>
-                <h3 id="jobTitle"> Your Job Title</h3>
-                <h4 id="profileHeader"> This is the section where you write down the code fo the job you're looking for</h4>
+                <h1 id="firstName_final"> <?php echo $_POST["firstname"]; ?> </h2>
+                <h3 id="profileHeader"> <?php echo $_POST["jobTitle"]; ?>  </h3>
+                <h4 id="profileHeader"> <?php echo $_POST["profile"]; ?>  </h4>
             </div>
+
             <div class="col-md-3">
                 <h4 id="Contact" style="margin-top: 7%;"> Contact</h4>
 
-                <h5 id="emailAddress" class="fa fa-envelope padNone"> youremail@gmail.com </h5> <br/>
-                <h5 id="phoneNumber" class="fa fa-phone"> (XXX) XXX-XXXX</h5><br/>
-                <h5 id="gitHub" class="fa fa-github"> XXXXXX </h5><br/>
-                <h5 id="linkedIn" class="fa fa-linkedin"> XXXXXX </h5><br/>
+                <h5 id="emailAddress" class="fa fa-envelope padNone">  <?php echo $_POST["email"]; ?> </h5> <br/>
+                <h5 id="phoneNumber" class="fa fa-phone"> <?php echo $_POST["phone"]; ?></h5><br/>
+                <h5 id="gitHub" class="fa fa-github"> <?php echo $_POST["linkedin"]; ?> </h5><br/>
+                <h5 id="linkedIn" class="fa fa-linkedin"> <?php echo $_POST["github"]; ?> </h5><br/>
             </div>
         </div>
     </div>
@@ -50,25 +54,60 @@
                 <img src="https://img.icons8.com/ios-filled/30/000000/library.png" class="iconSet " />
                 <h4 id="education" class="fa iconButton "> EDUCATION </h4> <br/>
                 <div class="padZero">
-                    <h4 id="collegeName1"> Name of Institution </h4>
-                    <p class="fa fa-calendar"> YYYY </p>
+                    <h4 id="collegeName1"> <?php echo $_POST["collegeName1"]; ?></h4>
+                    <p class="fa fa-calendar"> <?php echo $_POST["collegeStart1"]?> </p>
                 </div>
             </div>
+             <!-- Skills  -->
             <div class="col-md-4">
                 <img src="https://img.icons8.com/ios-filled/30/000000/training.png" class="iconSet" />
                 <h4 id="skills" class="fa iconButton "> SKILLS </h4>
                 <div class="skillList">
-                    <div class="col-md-3 skillSet">
-                        <h5> Skill 1 </h5>
+
+                    <div class="col-md-6 ">
+                        <h5> <?php echo $_POST["skill1"]?> </h5>
+                    </div>
+                    <div class="col-md-6 ">
+                        <h5> <?php echo $_POST["skill2"]?> </h5>
+                    </div>
+
+                    <div class="col-md-6 ">
+                        <h5> <?php echo $_POST["skill3"]?> </h5>
+                    </div>
+                    <div class="col-md-6 ">
+                        <h5> <?php echo $_POST["skill4"]?> </h5>
+                    </div>
+                    
+                    <div class="col-md-6 ">
+                        <h5> <?php echo $_POST["skill5"]?> </h5>
+                    </div>
+                    <div class="col-md-6 ">
+                        <h5> <?php echo $_POST["skill6"]?> </h5>
+                    </div>
+                    <div class="col-md-6 ">
+                        <h5> <?php echo $_POST["skill7"]?> </h5>
+                    </div>
+                    <div class="col-md-6 ">
+                        <h5> <?php echo $_POST["skill8"]?> </h5>
                     </div>
                 </div>
             </div>
+                 <!-- Awards  -->
             <div class="col-md-4">
                 <img src="https://img.icons8.com/ios-filled/30/000000/medal.png" class="iconSet " />
                 <h4 id="awards " class="fa iconButton "> AWARDS </h4>
                 <ul>
                     <li>
-                        <h4> Award </h4>
+                        <h4> <?php echo $_POST["award1"]?> </h4>
+                    </li>
+                    <li>
+                        <h4> <?php echo $_POST["award2"]?> </h4>
+                    </li>
+                    <li>
+                        <h4> <?php echo $_POST["award3"]?> </h4>
+                    </li>
+                    <li>
+                        <h4> <?php echo $_POST["award4"]?> </h4>
                     </li>
                 </ul>
             </div>
@@ -106,6 +145,11 @@
             </div>
         </div>
     </div>
+
+
+
+
 </body>
+
 
 </html>

@@ -1,12 +1,12 @@
 body {
-     background-image: linear-gradient(to right, #C9D6FF
-     , #E2E2E2); 
-
+    background-image: linear-gradient(to right, #C9D6FF, #E2E2E2);
 }
 
-input, textarea{
+input,
+textarea {
     border: black solid 1px;
 }
+
 #basicInfo form {
     text-align: center;
     padding-top: 5%;
@@ -33,7 +33,6 @@ input, textarea{
 }
 
 #technicalProjects input {
-    /* text-align: center; */
     margin: 0px 5% 0px 5%;
 }
 
@@ -54,7 +53,7 @@ input, textarea{
     margin-top: 1%;
 }
 
-.header{
-    text-align : center;
+.header {
+    text-align: center;
     color: black;
 }
