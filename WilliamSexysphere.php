@@ -114,7 +114,7 @@ if($skill_rows>0){
         </div>';
     }
 }
-?>
+?> 
 
         <div class="hobbies_history">
             <h3 class="topic"><i class="fas fa-heart"></i>Hobbies</h3>
