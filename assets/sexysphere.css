@@ -171,3 +171,20 @@ textarea[placeholder]{
 	float:right;
 	padding-right: 28%;
 }
+
+.head_template{
+	padding-top: 3%;
+	text-align: center;
+}
+.template_design{
+	padding-left: 20%;
+}
+.tem_thumbnail{
+	width: 35%;
+	border: 1pt transparent;
+	transition: width, 0.2s, border, 0.2s;
+}
+.tem_thumbnail:hover{
+	width: 37%;
+	border: 1pt solid aqua;
+}
