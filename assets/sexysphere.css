@@ -69,7 +69,7 @@ ul{
 	float:left;
 }
 
-.honors_history, .skills_history, .hobbies_history, 
+.honors_history, .skills_history, .hobbies_history,
 .lang_history{
 	padding-bottom: 15%;
 }
@@ -118,7 +118,7 @@ form{
 	padding: 10px;
 }
 .personal_head{
-	text-transform: uppercase; 
+	text-transform: uppercase;
 }
 input{
 	height: 50px;
